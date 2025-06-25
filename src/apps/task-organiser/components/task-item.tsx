@@ -29,7 +29,7 @@ export const TaskItem: React.FC<TaskItemProps> = ({ atom }) => {
   return (
     <div
       className={`flex flex-col rounded-2xl border-2 bg-white p-4 text-gray-900   ${
-        item.completed ? 'border-2 border-slate-700 bg-slate-700 ' : ''
+        item.completed ? 'border-2 border-slate-600 bg-slate-100 ' : ''
       }`}
       role="group"
       aria-label={`Task: ${item.title}`}
