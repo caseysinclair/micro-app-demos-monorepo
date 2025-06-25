@@ -38,7 +38,7 @@ export const Task: React.FC<TaskProps> = ({ atom }) => {
 
       {/* Task Title */}
       <div className="flex flex-col items-start gap-2 px-2" data-id="task-body">
-        <h3 className="font-serif text-3xl italic">{task.title}</h3>
+        <h3 className="font-serif text-3xl italic ">{task.title}</h3>
       </div>
 
       {/* Task Footer */}
