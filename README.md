@@ -1,22 +1,12 @@
 
 
-# ✨ Interactive Playground & Portfolio
+# Interactive Portfolio & Development Showcase
 
-Welcome to my digital playground! 🎮 This collection of micro-apps is where creativity meets code, showcasing not just what I can build, but how I think about creating delightful user experiences.
+Welcome to my portfolio of interactive micro-apps. This collection presents a series of focused applications that exemplify
+various approaches to modern web development and user experience design.
 
-Each mini-application here is a bite-sized demonstration of different technical skills and creative approaches, built with modern web technologies.
-From smooth animations to interactive state management, every project has its own story to tell.
-
-## 🎯 What's Inside?
-
-This isn't just another portfolio – it's an interactive journey! Each micro-app demonstrates different aspects of modern web development:
-
-- 🎨 Fluid animations and transitions
-- 🔄 State management wizardry
-- 🎮 Interactive user experiences
-- 🎭 Creative UI/UX implementations
-- ⚡ Performance-optimized components
-
+Each project serves as a practical demonstration of specific technical implementations and design patterns,
+utilising web technologies and frameworks.
 
 ## Getting Started
 
