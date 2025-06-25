@@ -17,14 +17,16 @@ interface PodcastCardProps {
 
 export const PodcastCardView = () => {
   return (
-    <PodcastCard
-      heading="Ep.01: Tails from the Everglades"
-      subheading="Fox and the bear podcast"
-      image={foxBearImg}
-      description="They met again, under a glowing moon. Luna taught Bear the secret paths. Bear shared with Luna the wisdom of storms. Together, they uncovered the Everglades’ mysteries."
-      date="June 30, 2024"
-      duration="1 hr"
-    />
+    <>
+      <PodcastCard
+        heading="Ep.01: Tails from the Everglades"
+        subheading="Fox and the bear podcast"
+        image={foxBearImg}
+        description="They met again, under a glowing moon. Luna taught Bear the secret paths. Bear shared with Luna the wisdom of storms. Together, they uncovered the Everglades’ mysteries."
+        date="June 30, 2024"
+        duration="1 hr"
+      />
+    </>
   )
 }
 

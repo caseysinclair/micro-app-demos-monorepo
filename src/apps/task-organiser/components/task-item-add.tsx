@@ -48,7 +48,7 @@ export const TaskItemAdd: React.FC<{ taskId: TTaskId }> = ({ taskId }) => {
               ref={inputTitleRef}
               autoFocus
               aria-label="Todo title"
-              className="w-full rounded-lg border border-gray-300 p-4 py-3 shadow-sm transition-all duration-300 placeholder:text-sm placeholder:italic focus:scale-125 focus:outline-none focus:ring-2 focus:ring-slate-500"
+              className="w-full rounded-lg border border-gray-300 p-4 py-3 shadow-sm transition-all duration-300 placeholder:text-sm placeholder:italic focus:scale-105 focus:outline-none focus:ring-2 focus:ring-slate-500"
             />
           </div>
         </div>

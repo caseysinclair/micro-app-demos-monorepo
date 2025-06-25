@@ -22,7 +22,7 @@ export const Task: React.FC<TaskProps> = ({ atom }) => {
   if (!task) return null
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 text-slate-600">
       {/* Task Header */}
       <div
         className="flex items-center justify-end gap-1"
