@@ -3,6 +3,7 @@ import { useHover, useMediaQuery } from '@uidotdev/usehooks'
 import { PodcastSoundWaves } from './podcast-sound-waves'
 
 import foxBearImg from '../../assets/fox-bear-cover.png'
+import { useAudio } from './use-audio'
 
 // This component is inspired by Spotify Podcast list within their Desktop app.
 
@@ -38,16 +39,21 @@ export const PodcastCard: React.FC<PodcastCardProps> = ({
   date,
   duration
 }) => {
-  const [isPlaying, setIsPlaying] = useState(false)
+  const { isPlaying, play, stop } = useAudio(
+    'https://github.com/caseysinclair/micro-app-demos-monorepo/raw/refs/heads/main/src/assets/sample-audio.mp3'
+  )
 
   const [ref, isHovering] = useHover()
 
   const isMobile = useMediaQuery('only screen and (max-width : 768px)')
 
   useEffect(() => {
-    // Fade out the sound waves when the card is not hovered
-    if (!isHovering) setTimeout(() => setIsPlaying(false), 300)
-  }, [isHovering])
+    if (!isHovering) setTimeout(() => stop(), 800)
+  }, [isHovering, stop])
+
+  const handlePlay = () => {
+    isPlaying ? stop() : play(2)
+  }
 
   const isCardExpanded = isHovering || isMobile // Always show expanded card on mobile
 
@@ -111,9 +117,9 @@ export const PodcastCard: React.FC<PodcastCardProps> = ({
           }`}
         >
           <button
-            onClick={() => setIsPlaying(!isPlaying)}
+            onClick={handlePlay}
             aria-label="Preview Episode"
-            className={`flex items-center rounded-2xl bg-black/40 p-2 text-xs text-white hover:scale-105`}
+            className={`flex items-center rounded-2xl bg-black/40 p-3 text-xs text-white transition-all duration-300 ease-in-out hover:scale-105`}
           >
             {!isPlaying ? (
               <svg
